@@ -12,7 +12,7 @@ Escreva aqui as atividades desenvolvidas em sala e para casa. Você pode detelha
 
 ```js
 variaveis
-var
+var = 
 console.log(nome)
 ```
 
