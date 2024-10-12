@@ -71,5 +71,3 @@ console.log(nome + sobrenome)
 
 
 
-
-
