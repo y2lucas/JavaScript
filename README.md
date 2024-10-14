@@ -88,9 +88,8 @@ console,log(`Olá ${nome} esse e seu nome,seu sobrenome e ${sobrenome}`) // usam
 ```js
 const nome = "lucas "
 const sobrenome = "Vasconcelos"
-const competo = nome.concat(sobrenome
+const competo = nome.concat(sobrenome)
 console.log(completo)// vai sair lucas Vasconcelos
-
 ```
 
 
