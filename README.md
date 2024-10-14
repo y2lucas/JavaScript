@@ -7,7 +7,15 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" height="50" width="50">
 
 
-
+## Exibir Mensagens
+```js
+//console.log() exibe mensagem no console do navegador
+console.log("Hello, Word")// irá exibir Hello, Word no console do navegador
+```
+```js
+//document.write() exibe a mensagem diretamenta na página(usado junto com html)
+document.write("Hello, Word") // irá exibir e mensagem diretamente no navegador)
+```
 ## Variáveis
 ```js
 
@@ -69,6 +77,20 @@ console.log(num)//123.45
 const nome = "lucas"
 const sobrenome = " Vasconcelos"
 console.log(nome + sobrenome)
+```
+### Templete String ${}
+```js
+const nome = "lucas"
+const sobrenome = "Vasconcelos"
+console,log(`Olá ${nome} esse e seu nome,seu sobrenome e ${sobrenome}`) // usamos a crase no Templete String
+```
+### Concat()
+```js
+const nome = "lucas "
+const sobrenome = "Vasconcelos"
+const competo = nome.concat(sobrenome
+console.log(completo)// vai sair lucas Vasconcelos
+
 ```
 
 
