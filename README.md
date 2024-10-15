@@ -10,11 +10,11 @@
 ## Exibir Mensagens
 ```js
 //console.log() exibe mensagem no console do navegador
-console.log("Hello, Word")// irá exibir Hello, Word no console do navegador
+console.log("Hello, Word")// irá exibir "Hello, Word" no console do navegador
 ```
 ```js
 //document.write() exibe a mensagem diretamenta na página(usado junto com html)
-document.write("Hello, Word") // irá exibir e mensagem diretamente no navegador)
+document.write("Hello, Word") // irá exibir e mensagem diretamente no navegador
 ```
 ## Variáveis
 ```js
@@ -34,7 +34,7 @@ console.log(idade) // o valor vai sair 31
 ```js
 
 //const(constante) não pode ser alterada
-consty idade = 30// declarou o valor 30
+const idade = 30// declarou o valor 30
 console.log(idade) // o valor vai sair 30
 ```
 ## Tipos Primitivos
@@ -123,7 +123,7 @@ console.log(n1 * n2)// vai retorna 20
 ```js
 let numero = 13
 let resto = numero % 2
- console.log(resto) // 1
+console.log(resto) // 1
 ```
 
 
