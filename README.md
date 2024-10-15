@@ -91,6 +91,30 @@ const sobrenome = "Vasconcelos"
 const competo = nome.concat(sobrenome)
 console.log(completo)// vai sair lucas Vasconcelos
 ```
+## Operadores
+#### são símbolos especiais que indicam para o computador realizar uma determinada operação,existem as Aritméticos,Relacionais,Lógicos,Atribuição
+## Aritméticas  São representados por +,-,/,*,%
+## +
+```js
+const n1 = 9
+const n2 = 10
+console.log(n1 + n2)// vai retorna 19
+```
+## -
+```js
+const n1 = 9
+const n2 = 10
+console.log(n1 - n2)// vai retorna 1
+```
+## /
+```js
+const n1 = 10
+const n2 = 2
+console.log(n1 / n2)// vai retorna 5
+```
+
+
+
 
 
 
