@@ -94,26 +94,37 @@ console.log(completo)// vai sair lucas Vasconcelos
 ## Operadores
 #### são símbolos especiais que indicam para o computador realizar uma determinada operação,existem as Aritméticos,Relacionais,Lógicos,Atribuição
 ## Aritméticas  São representados por +,-,/,*,%
-## +
+## + soma dos valores
 ```js
 const n1 = 9
 const n2 = 10
 console.log(n1 + n2)// vai retorna 19
 ```
-## -
+## - subtração dos valores
 ```js
 const n1 = 9
 const n2 = 10
 console.log(n1 - n2)// vai retorna 1
 ```
-## /
+## / dvisão dos valores
 ```js
 const n1 = 10
 const n2 = 2
 console.log(n1 / n2)// vai retorna 5
 ```
+## * multiplicação dos valores
+```js
+const n1 = 10
+const n2 = 2
+console.log(n1 * n2)// vai retorna 20
+```
 
-
+## % resto de uma divisão
+```js
+let numero = 13
+let resto = numero % 2
+ console.log(resto) // 1
+```
 
 
 
