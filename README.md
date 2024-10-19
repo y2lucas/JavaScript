@@ -127,39 +127,39 @@ console.log(resto) // 1
 ```js
 const n1 = 7
 const n2 = 4
-console.log(n1 > n2)
-true // retornou true que o valor de n1 e maior que o valor de n2
+console.log(n1 > n2) // retorna true que o valor de n1 e maior que o valor de n2
+
 ```
 ### < menor que
 ```js
 const n1 = 7
 const n2 = 4
-console.log(n1 < n2)
-false  // retornou false que o valor de n1 e maior que o valor de n2
+console.log(n1 < n2) // retorna false que o valor de n1 e maior que o valor de n2
+
 ```
 ### >= maior ou igual que
 ```js
 const n1 = 7
 const n2 = 4
-console.log(n1 >= n2)
-true // retornou true que o valor de n1 e maior que o valor de n2, ou se o valor fosse igual iria retonar o valor true também
+console.log(n1 >= n2) // retorna true que o valor de n1 e maior que o valor de n2, ou se o valor fosse igual iria retonar o valor true também
+
 ```
 ### <= menor ou igual que
 ```js
 const n1 = 7
 const n2 = 4
-console.log(n1 <= n2)
-false // retornou false que já que o 7 e maior que 4, se fosse igual também retornaria igual
+console.log(n1 <= n2) // retorna false que já que o 7 e maior que 4, se fosse igual também retornaria igual
+ 
 ```
 ### == igual
 ```js
 const nome = prompt("Digite seu nome")
-console.log(nome == "lucas")// se o usuario digitar lucas vai aparecer true, se não vai parecer false
+console.log(nome == "lucas") // se o usuario digitar lucas vai aparecer true, se não vai parecer false
 ```
 ### !=  diferente
 ```js
 const nome = prompt("Digite seu nome")
-console.log(nome != "lucas")// se o usuario digitar lucas vai aparecer false, se não vai parecer true
+console.log(nome != "lucas") // se o usuario digitar lucas vai aparecer false, se não vai parecer true
 ```
 ## lógicos ||,&&
 ###  ||- se operador tem ns. tentativa
