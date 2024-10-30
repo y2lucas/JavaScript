@@ -1,13 +1,4 @@
-# Caderno virtual de JavaScript 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" height="50" width="50">
-
-
-
-
-
-
-
-
+# Caderno virtual de JavaScript <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" height="45" width="45">
 
 
 ## Exibir Mensagens
@@ -177,7 +168,9 @@ if (numero > 5 && numero < 15) {
 }
 ```
 ## Estruturas condicionais
-### if,else - se ou senão
+### if,else,else if
+### if- Se uma condição for verdadeira, o código dentro do bloco if será executado
+### Else: Se a condição do if for falsa, o código dentro do bloco else será executado.
 ```js
 const nota = parseFloat(prompt("Digite sua nota"))
 if(nota >= 7){ // se a nota for maior ou igual a 7 vai aparecer aprovado
