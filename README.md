@@ -167,31 +167,6 @@ if (numero > 5 && numero < 15) {
   console.log("O número está entre 5 e 15");
 }
 ```
-## Estruturas condicionais
-### if,else,else if
-### if- Se uma condição for verdadeira, o código dentro do bloco if será executado
-### else: Se a condição do if for falsa, o código dentro do bloco else será executado
-### else if: estrutura que permite multiplicas escolhas
-```js
-const nota = parseFloat(prompt("Digite sua nota"))
-if(nota >= 7){ // se a nota for maior ou igual a 7 vai aparecer aprovado
-console.log("Aprovado")
-}else{ // se não vai aparecer reprovado
-console.log("Vamos melhorar a nota")
-}
-```
-```js
-let numero = 10;
-
-if (numero > 0) {
-    console.log("O número é positivo.");
-} else if (numero < 0) {
-    console.log("O número é negativo.");
-} else {
-    console.log("O número é zero.");
-}
-
-```
 
 
 
