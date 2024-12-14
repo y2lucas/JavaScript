@@ -191,8 +191,17 @@ let input = document.getElementById("text-input")
 const m = document.getElementsBytagName("p")[0]
 ```
 ## querySelector()
-### Retorna qualquer Elemento do DOM, como
+### Retorna qualquer Elemento do DOM, como Classes,tags e ID's, você apenas precisa deixar explicativo se está chamando uma classe, um ID ou uma tag. Id = #, classes = .,Sim as classes usam pontos
+```js
+let getInputid = document.querySelector("#textinput")
+let getInputclass = document.querySelector(".text-input")
+let getInputtag = document.querySelector("input")
+```
+## getElementByClass()
+### esse método nos permite selecionar elementos do documento incluidos dentro do atributo class,recebe um único argumento de String, que pode conter vários indentificadores separados por espaços
 
+## Modificação do HTML pelo JAVASCRIPT
+## Innertext
 
 
 
