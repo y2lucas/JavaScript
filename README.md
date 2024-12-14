@@ -167,10 +167,31 @@ if (numero > 5 && numero < 15) {
   console.log("O número está entre 5 e 15");
 }
 ```
+## Dom(document object Moldel)
+### É uma representação de uma página HTML e de todos os seus conteúdos, Ele se assemelha a uma árvore cujas <br> galhos são no, onde cada tag e conteúdo geram uns nó, tudo em página HTML é um nó na árvore do Dom, de onde podem Surgir ainda outros nós filhos.
+   <img src="https://hermes.dio.me/articles/cover/315351e5-1c6e-4bad-8690-34a014fc88ec.png" height="460px" weight="120px">
+   
+## Composição do DOM
+### Nó Documento: O Próprio documento HTML.
+### Nó Elemento: Todas as tags existentes dentro do arquivo HTML e que se transforman em elemntos dentro da árvore DOM.
+### Nó texto: o conteúdo de texto esistente dentro das tags.
+### Nó Atributo: Todos os Atributos existentes dentro das tags em especifico Ex: href,id,class,dentro outros.
 
-
-
-
+## Importância do DOM
+### para realizarmos alterações na esttrutura do HTML, nos seus estilos,modificar conteúdos e adicionar os mais diversos eventos
+## Métodos de Manipulação do DOM
+## getElementById()
+### Retorna o conteúdo do elemento HTML que estiver com o nome de Id informado,os Ids devem ser nomes únicos.
+```js
+let input = document.getElementById("text-input")
+```
+## getElementsByTagName()
+### Retorna uma coleção de todas os elementos que contenham o nome da tag informada,caso tenha mais de uma tag igual vai pelo[ ] que começa pelo 0
+```js
+const m = document.getElementsBytagName("p")[0]
+```
+## querySelector()
+### Retorna qualquer Elemento do DOM, como
 
 
 
