@@ -202,6 +202,33 @@ let getInputtag = document.querySelector("input")
 
 ## Modificação do HTML pelo JAVASCRIPT
 ## Innertext
+### Modifica o conteúdo do texto de um elemento
+```js
+p.innertext = "novo texto"
+```
+## InnerHtml
+### Modifica o contéudo HTML intertno de um elemento
+```js
+p.innerthtml="<b>texto em negrito</b>"
+```
+## Modificação do CSS pelo JavaSCript
+## Style
+### Utilizada para Selecionar ou Modificar uma Regra de Estilização
+```js
+document.getElementById("myh1").style.color="red"
+```
+## Eventos no JavaScript
+### Eventos são basicamente um conjunto de açõoes que são realizadas em um determinado elemento da página web,seja ele um texto, uma div, por EXemplo, eventos podem ser algo que o brawser faz,ou que o usuário faça por Exemplo:
+### - A Finalização de carregamento de uma página HTML
+### - Um Campo Input que foi Prenchido pelo Usuário
+### - Um Botão que Foi Clicado
 
 
-
+| OndClick|Disparado quando o Click Duplo |
+|---|---|
+| Onmouseover |Disparado Quando o Mouse está sobre| 
+| onmousemove |Disparado quando o mouse é movido | 
+| onmouseout  |Disparado quando o mouse é movido para fora do elemento | 
+| onmousedown |Disparado quando o Clique do botão for Pressionado | 
+| onkeypress |Disparado quando a tecla e pressionada e seta sobre um elemento| 
+| onkeyPress |Disparado quando o mouse é movido | 
