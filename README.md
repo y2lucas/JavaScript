@@ -226,9 +226,38 @@ document.getElementById("myh1").style.color="red"
 
 | OndClick|Disparado quando o Click Duplo |
 |---|---|
-| Onmouseover |Disparado Quando o Mouse está sobre| 
-| onmousemove |Disparado quando o mouse é movido | 
-| onmouseout  |Disparado quando o mouse é movido para fora do elemento | 
-| onmousedown |Disparado quando o Clique do botão for Pressionado | 
-| onkeypress |Disparado quando a tecla e pressionada e seta sobre um elemento| 
-| onkeyPress |Disparado quando o mouse é movido | 
+| Onmouseover|Disparado Quando o Mouse está sobre| 
+| onmousemove|Disparado quando o mouse é movido| 
+| onmouseout|Disparado quando o mouse é movido para fora do elemento| 
+| onmousedown|Disparado quando o Clique do botão for Pressionado| 
+| onkeypress|Disparado quando a tecla e pressionada e seta sobre um elemento| 
+| onkeyeyup|Disparado quando a tecla e pressionada e solta sobre um elemento|
+| onload|Disparado quando a página terminou de ser carregada|
+| onresize|Disparado quando há um redirecionamento da janela|
+
+## Condições
+### para Criar Programas dinâmicos e inteligentes,permitem que os programas tomem decisões,usam expressões lógicos,Essas expressões comparam valores,verficam se algo é igual,diferente,Maior ou Menor
+## Estruturas
+### -if: Verifica uma única condição
+### -else: Executa código se a condição do if for falsa
+### -else if: Verifica múltiplicas condições em Sequências
+### -Switch: Compara um Valor com várias opções possiveis
+
+## Condição Simples: if
+### é a mais básica, executa um bloco de código apenas Se uma determinada condição for verdadeira.
+```js
+let idade = 18
+if(idade >= 18){
+console.log("Você e maior de idade")
+}
+```
+## Condição Composta: else
+### O else é usado em conjunto com o if para executar um bloco co casa qa condição do if seja falsa
+```js
+let idade = 17
+if(idade >= 18){
+console.log("Você e maior de idade")
+}else{
+console.log("Você e maior de idade")
+}
+```
