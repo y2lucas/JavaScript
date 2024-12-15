@@ -261,3 +261,33 @@ console.log("Você e maior de idade")
 console.log("Você e maior de idade")
 }
 ```
+## Condição aninhadas: else if
+### Permitem Verificar Múltiplas condições em Sequência. o else if é usado para testar uma nova condição se a condição anterior for falsa.
+```js
+const cantor = "Travis Scott"
+if(cantor == "Travis Scott"){
+console.log(` o Cantor ${cantor} tem 33 anos`)
+}else if(cantor == "Wiu"){
+console.log(` o Cantor ${cantor} tem 22 anos`)
+}else if(cantor == "Lil peep"){
+console.log(`Infelizmento o cantor ${cantor} Morreu com 21 anos`)
+}
+else{
+console.log("Não sei sobre esse cantor")
+}
+```
+## Casos/ Condições Múltiplas: Switch
+### O Switch é uma estrutura útil quando você precisa comparar um valor com várias opções possiveis.
+```js
+const dia = "segunda"
+switch(dia){
+case "segunda":
+console.log("Começo de Semana")
+break;
+case "sexta":
+console.log("Final de Semana")
+break;
+default:
+console.log("Dia comum")
+}
+```
