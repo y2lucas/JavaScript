@@ -291,3 +291,32 @@ default:
 console.log("Dia comum")
 }
 ```
+## Estretura de Repetição ou Loops
+### São ferramentas essencias que permitem executar um bloco de código repetidamente enquanto uma determinada condição for verdadeira.
+## Tipos de estruturas de repetição
+### Existem três tipos de estruturas de repetição são elas:
+### -For: ideal quando você sabe exatamente quantas vezes deseja repitir o código.
+### -While: Útil quando você não sabe exatamente quantas vezes o loop será executada.
+### -Do While: È Semelhante ao while. mas a diferença é executado pelo menos uma vez,antes de Verificar a condição.
+## For: È o loop mais utilizado quando você sabe exatamente qunatas vezes deseja repetir um bloco de código.
+```js
+for(let vr=0; vr<=7; vr++){
+console.log(vr)
+}
+```
+## While: Repete um Bloco de código enquanto uma condição For verdadeira.
+```js
+let tr=1
+while(tr<=9){
+tr++
+console.log(tr)
+}
+```
+## Do...While: È Semelhante ao While,Mas a diferença é que o bloco de código é executado pelo menos uma vez,antes de verificar a condição
+```js
+let tr= 1
+do{
+tr++
+console.log(tr)
+}while(tr <= 5)
+```
