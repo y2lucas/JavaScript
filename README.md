@@ -320,3 +320,11 @@ tr++
 console.log(tr)
 }while(tr <= 5)
 ```
+## Variáveis Simples e Composta
+### são como caixas que armazenam dados a escolha entre variáveis simples e compostas depende da quantidade e do tipo de informação que você precisa guardar.
+## Variáveis Simples
+### - Armazenam um único valor: Cada váriavel simples contém apenas um dado, como um número, uma palavra ou um caractere.
+### - Tipos de dados: Os Tipos de dados mais comuns são inteiros, números de ponto fluenete,caracteres e booleanos(Verdadeiros ou falsos).
+## Variáveis Composta
+### - Armazenam múltiplos valores: A variáveis compostas agrupam vários valores em uma única estrutura, permitindo organizar dados de forma mais eficiente.
+### - Tipos de dados Compostas: Os tipos mais comuns são listas,tuplas dicionários é conjuntos
