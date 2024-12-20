@@ -362,12 +362,12 @@ console.log(Array.isArray(by))//Resultado:false
 | Splice()|Permite adicionar,remover e substituir elementos em uma array | 
 | Slice()|utilizado para extrair uma parte de um array e criar um novo array com os elementos extraidos,ele não modifica o array | 
 | concat()|Usado para combinar dois ou mais arrays em uma nova array | 
-| join()|Permite que você transforme um array em uma string,concatenado todos os eus elementos,você pode até mesmo especificar um separador personalizado para os elemntos | 
+| join()|Permite que você transforme um array em uma string,concatenando todos os elementos,você pode até mesmo especificar um separador personalizado para os elemntos | 
 | indexOf()|Encontra a primeira ocorrênca de um elemento especifico dentro de um array,ela retorna o indice do elemento encontrado,ou -1 caso o elemento não exista |
-| lastIndexOf()|Utliza para encontar o último ocorrência de um elmento especifico dentro de um array,retorna o indice dessa ocorrência | 
-| includes()| | 
-| ForEach()| | 
-| map()| |
+| lastIndexOf()|Utliza para encontar o último ocorrência de um elmento especifico dentro de um array,retorna o indice dessa ocorrência| 
+| includes()|Utilizado para verificar se um determinado elemento existe dentro de um array, ele retorna um valor bolleano(true ou false)| 
+| ForEach()|Inteira sobre cada elemento de um array e executa uma função especifica pra cada um deles| 
+| map()| Permite criar uma nova array a partir de um array existente, ele mapeia cada elemento para um novo valor|
 | filte()| | 
 ## Push() - É utilizado para adicionar um ou mais elementos ao final de um array.
 ```js
@@ -432,5 +432,35 @@ const frutas = ["maçã","pera","banana","laranja","maçã"]
 const ult = frutas.lastIndexOf("maçã")
 console.log(ult)//4
 ```
-## Includes() - Utilizado
+## Includes() - Utilizado para verificar se um determinado elemento existe dentro de um array, ele retorna um valor bolleano(true ou false)
+```js
+const frutas = ["maçã","banana","laranja"]
+const tbom = frutas.includes("banana")
+console.log(tbom)//true
+const tp = frutas.includes("pera")
+console.log(tp)//false
+```
+## ForEach - Inteira sobre cada elemento de um array e executa uma função especifica pra cada um deles
+```js
+Const frutas = ["maçã","banana","laranja"]
+frutas.ForEach(function(fruta){
+console.log(fruta)
+});
+```
+## Map() - Permite criar uma nova array a partir de um array existente, ele mapeia cada elemento para um novo valor.
+```js
+const numeros = [1,2,3,4,5]
+const numerosdob = numeros.map(function(numero){
+return numero * 2
+});
+console.log(numerosdob)//[2,4,6,8,10]
+```
+## filter() - Permite criar novos arrays a partir de um array existente,filtrando os elementos que atendem a um determinado critério.
+```js
+const numeros = [1,2,3,4,5,6]
+const numerosp = numeros.filter(numeros => numero%2===0)
+console.log(numerosp)// [2,4,6]
+```
+
+
 
