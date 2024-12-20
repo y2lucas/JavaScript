@@ -235,7 +235,7 @@ document.getElementById("myh1").style.color="red"
 | onload|Disparado quando a página terminou de ser carregada|
 | onresize|Disparado quando há um redirecionamento da janela|
 
-## Condições
+# Condições
 ### para Criar Programas dinâmicos e inteligentes,permitem que os programas tomem decisões,usam expressões lógicos,Essas expressões comparam valores,verficam se algo é igual,diferente,Maior ou Menor
 ## Estruturas
 ### -if: Verifica uma única condição
@@ -291,7 +291,7 @@ default:
 console.log("Dia comum")
 }
 ```
-## Estretura de Repetição ou Loops
+# Estretura de Repetição ou Loops
 ### São ferramentas essencias que permitem executar um bloco de código repetidamente enquanto uma determinada condição for verdadeira.
 ## Tipos de estruturas de repetição
 ### Existem três tipos de estruturas de repetição são elas:
@@ -320,7 +320,7 @@ tr++
 console.log(tr)
 }while(tr <= 5)
 ```
-## Variáveis Simples e Composta
+# Variáveis Simples e Composta
 ### são como caixas que armazenam dados a escolha entre variáveis simples e compostas depende da quantidade e do tipo de informação que você precisa guardar.
 ## Variáveis Simples
 ### - Armazenam um único valor: Cada váriavel simples contém apenas um dado, como um número, uma palavra ou um caractere.
@@ -328,3 +328,109 @@ console.log(tr)
 ## Variáveis Composta
 ### - Armazenam múltiplos valores: A variáveis compostas agrupam vários valores em uma única estrutura, permitindo organizar dados de forma mais eficiente.
 ### - Tipos de dados Compostas: Os tipos mais comuns são listas,tuplas dicionários é conjuntos
+# Array/Vetores
+### È uma coleção ordenada de valores, esses valores podem ser de qualquer tipo de dado, incluindo números String, objetos e até outras arrays, As arrays são nômicas, o que significa que você pode adicionar ou remover elementos a qualquer momento.
+```js
+//Elementos: Valores que ficam agrupadas dentro da array/3 elementos
+const livros ["java","html","css"]
+//index: posição da localização do elemento na array, aqui no caso e java = 0, html = 1, css = 2
+```
+## Propriedades
+| lenght|Retorna o número total de elementos presentes na array |
+|---|---|
+|  isArray()|Verifica se um determinado é um array, Retorna um valor Boleano(true ou false)| 
+
+## lenght - Retorna o número total de elementos presentes na array
+```js
+const frutas = ["maça","banana","laranja"]
+console.log(frutas.lenght)//Saida 3
+```
+## isArray() - Verifica se um determinado é um array, Retorna um valor Boleano(true ou false)
+ 
+```js
+const mef = [1,2,4]
+const by = "sle"
+console.log(Array.isArray(mef))//Resultado:true
+console.log(Array.isArray(by))//Resultado:false
+```
+## Métodos
+|Push()|É utilizado para adicionar um ou mais elementos ao final de um array |
+|---|---|
+| Pop()|È utilizaqdo quando você precisa remover e retornar o último elemento de um array | 
+| Shift()|È utilizado para remover e retornar o primeiro elemento de um array| 
+| unShift()|Utilizado para adcioanr um elemento na primeira posição da array | 
+| Splice()|Permite adicionar,remover e substituir elementos em uma array | 
+| Slice()|utilizado para extrair uma parte de um array e criar um novo array com os elementos extraidos,ele não modifica o array | 
+| concat()|Usado para combinar dois ou mais arrays em uma nova array | 
+| join()|Permite que você transforme um array em uma string,concatenado todos os eus elementos,você pode até mesmo especificar um separador personalizado para os elemntos | 
+| indexOf()|Encontra a primeira ocorrênca de um elemento especifico dentro de um array,ela retorna o indice do elemento encontrado,ou -1 caso o elemento não exista |
+| lastIndexOf()|Utliza para encontar o último ocorrência de um elmento especifico dentro de um array,retorna o indice dessa ocorrência | 
+| includes()| | 
+| ForEach()| | 
+| map()| |
+| filte()| | 
+## Push() - É utilizado para adicionar um ou mais elementos ao final de um array.
+```js
+let frutas = ["maça","uva"]
+frutas.push("laranja")
+console.log(frutas)// ["maçã","banana","laranja"]
+```
+## Pop() - È utilizaqdo quando você precisa remover e retornar o último elemento de um array 
+```js
+let frutas ["uva","pera","morango"]
+let ut = frutas.pop()
+console.log(frutas)// ["maçã","banana"]
+console.log(ut)// laranja
+```
+## Shift() - È utilizado para remover e retornar o primeiro elemento de um array
+```js
+let lista = ["ovo","pão","leite"]
+let prt = lista.Shift()
+console.log(prt)//ovo
+console.log(lista)//["pão","leite"]
+```
+## UnShift - Utilizado para adcioanr um elemento na primeira posição da array
+```js
+let nomes = ["lucas","Felipe","Leandro"]
+nomes.Unshift("Vitor")
+console.log(nomes)// ["Vitor","lucas","Felipe","Leandro"]
+```
+## Spice() - Permite adicionar,remover e substituir elementos em uma array
+```js
+let lista = ["leite","ovos","pão"]
+lista.splice(1,1)//Remove 1 item a partir do 1 indice(item2)
+console.log(lista)//["leite","pão]
+```
+## Slice() - utilizado para extrair uma parte de um array e criar um novo array com os elementos extraidos,ele não modifica o array
+```js
+const frutas = ["maçã","banana","laranja","uva","peru"]
+const selct = frutas.slice(1,4)
+console.log(selct)// ["banana","laranja","uva"]
+```
+## Concat() - Usado para combinar dois ou mais arrays em uma nova array
+```js
+let at = [1,3,4]
+let th = [6,8,3]
+const junt = at.concat(th)
+console.log(junt)// [1,3,4,6,8,3]
+```
+## Join() - Permite que você transforme um array em uma string,concatenado todos os eus elementos,você pode até mesmo especificar um separador personalizado para os elemntos
+```js
+const frutas = ["maçã","banana","laranja"]
+const frase = frutas.join(",")
+console.log(frase)//maçã,banana,laranja
+```
+## indexOf() - Encontra a primeira ocorrênca de um elemento especifico dentro de um array,ela retorna o indice do elemento encontrado,ou -1 caso o elemento não exista
+```js
+const numeros = [2,4,5,7]
+const posi = numeros.indexof(7)
+console.log(posi)//3
+```
+## lastindexOf() - Utliza para encontar o último ocorrência de um elmento especifico dentro de um array,retorna o indice dessa ocorrência
+```js
+const frutas = ["maçã","pera","banana","laranja","maçã"]
+const ult = frutas.lastIndexOf("maçã")
+console.log(ult)//4
+```
+## Includes() - Utilizado
+
