@@ -1,174 +1,178 @@
 # Caderno virtual de JavaScript <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" height="45" width="45">
 
 
-## Exibir Mensagens
-### console.log() exibe mensagem no console do navegador
+# Exibir Mensagens
+## console.log() 
+### exibe mensagem no console do navegador
 ```js
 console.log("Hello, Word")// irá exibir "Hello, Word" no console do navegador
 ```
-### document.write() exibe a mensagem diretamenta na página(usado junto com html)
+## document.write() 
+### exibe a mensagem diretamenta na página(usado junto com html)
 ```js
 document.write("Hello, Word") // irá exibir e mensagem diretamente no navegador
 ```
-## Variáveis
-### var(forma mais antiga) pode ser alterada
+# Variáveis
+## var(forma mais antiga) pode ser alterada
 ```js
 var idade = 30// declarou o valor 30
 idade = 31 // mudou o valor para 31
 console.log(idade) // o valor vai sair 31
 ```
-### let(forma mais moderna) pode ser alterada
+## let(forma mais moderna) pode ser alterada
 ```js
 let idade = 30// declarou o valor 30
 idade = 31 // mudou o valor para 31
 console.log(idade) // o valor vai sair 31
 ```
-### const(constante) não pode ser alterada
+## const(constante) não pode ser alterada
 ```js
 const idade = 30// declarou o valor 30
 console.log(idade) // o valor vai sair 30
 ```
-## Tipos Primitivos
-### String(para reprensentar textos) pode usar aspas simples,aspas duplas,crase
+# Tipos Primitivos
+## String(para reprensentar textos) 
+### pode usar aspas simples,aspas duplas,crase
 ```js
 let aspasimples = "maria"
 let aspasduplas = 'maria'
 let crase = `maria`
 ```
-### Number(Usada para representar Números)
+## Number
+### (Usada para representar Números)
 ```js
 let n1 = 2
 let n2 = 5.3
 ```
-### Boolean(Usado para representar um valor verdadeiro ou falso(usado muito em condições ou em loops)
+## Boolean
+### (Usado para representar um valor verdadeiro ou falso(usado muito em condições ou em loops)
 ```js
 let estativo = true
 let usuarioautenticado = false
 ```
-## Convertendo de String Para numero
-#### Para converter uma String em um número inteiro ou decimal usamos o ParseInt() ou ParseFloat()
-### parseInt() para Inteiros
+# Convertendo de String Para numero
+## Para converter uma String em um número inteiro ou decimal usamos o ParseInt() ou ParseFloat()
+## parseInt() para Inteiros
 ```js
 let str = "123.45"
 let num = parseInt(str)
 console.log(num)//123
 ```
-### parseFloat() para decimal
+## parseFloat() para decimal
 ```js
 let str = "123.45"
 let num = parseFloat(str)
 console.log(num)//123.45
 ```
-## Concatenação
-### E usado para unir string, outros valores podemos usar: +(sinal da soma),${}(template String),Concat
+# Concatenação
+## E usado para unir string, outros valores podemos usar: +(sinal da soma),${}(template String),Concat
 
-### + (sinal de soma)
+## + (sinal de soma)
 ```js
 const nome = "lucas"
 const sobrenome = " Vasconcelos"
 console.log(nome + sobrenome)
 ```
-### Templete String ${}
+## Templete String ${}
 ```js
 const nome = "lucas"
 const sobrenome = "Vasconcelos"
 console,log(`Olá ${nome} esse e seu nome,seu sobrenome e ${sobrenome}`) // usamos a crase no Templete String
 ```
-### Concat()
+## Concat()
 ```js
 const nome = "lucas "
 const sobrenome = "Vasconcelos"
 const competo = nome.concat(sobrenome)
 console.log(completo)// vai sair lucas Vasconcelos
 ```
-## Operadores
-#### são símbolos especiais que indicam para o computador realizar uma determinada operação,existem as Aritméticos,Relacionais,Lógicos,Atribuição
+# Operadores
+## são símbolos especiais que indicam para o computador realizar uma determinada operação,existem as Aritméticos,Relacionais,Lógicos,Atribuição
 ## Aritméticas  São representados por +,-,/,*,%
-### + soma dos valores
+## + soma dos valores
 ```js
 const n1 = 9
 const n2 = 10
 console.log(n1 + n2)// vai retorna 19
 ```
-### - subtração dos valores
+## - subtração dos valores
 ```js
 const n1 = 9
 const n2 = 10
 console.log(n1 - n2)// vai retorna 1
 ```
-### / dvisão dos valores
+## / dvisão dos valores
 ```js
 const n1 = 10
 const n2 = 2
 console.log(n1 / n2)// vai retorna 5
 ```
-### * multiplicação dos valores
+## * multiplicação dos valores
 ```js
 const n1 = 10
 const n2 = 2
 console.log(n1 * n2)// vai retorna 20
 ```
 
-### % resto de uma divisão
+## % resto de uma divisão
 ```js
 let numero = 13
 let resto = numero % 2
 console.log(resto) // 1
 ```
 ## Relacionados são representados por >,<,>=,<=,==,!=,
-### > maior que
+## > maior que
 ```js
 const n1 = 7
 const n2 = 4
 console.log(n1 > n2) // retorna true que o valor de n1 e maior que o valor de n2
 
 ```
-### < menor que
+## < menor que
 ```js
 const n1 = 7
 const n2 = 4
 console.log(n1 < n2) // retorna false que o valor de n1 e maior que o valor de n2
 
 ```
-### >= maior ou igual que
+## >= maior ou igual que
 ```js
 const n1 = 7
 const n2 = 4
 console.log(n1 >= n2) // retorna true que o valor de n1 e maior que o valor de n2, ou se o valor fosse igual iria retonar o valor true também
-
 ```
-### <= menor ou igual que
+## <= menor ou igual que
 ```js
 const n1 = 7
 const n2 = 4
 console.log(n1 <= n2) // retorna false que já que o 7 e maior que 4, se fosse igual também retornaria igual
  
 ```
-### == igual
+## == igual
 ```js
 const nome = prompt("Digite seu nome")
 console.log(nome == "lucas") // se o usuario digitar lucas vai aparecer true, se não vai parecer false
 ```
-### !=  diferente
+## !=  diferente
 ```js
 const nome = prompt("Digite seu nome")
 console.log(nome != "lucas") // se o usuario digitar lucas vai aparecer false, se não vai parecer true
 ```
 ## lógicos ||,&&
-###  ||- se operador tem ns. tentativa
+##  ||- se operador tem ns. tentativa
 ```js
 const nome = prompt("Digite seu nome")
 console.log(nome == "lucas" || nome == "dmd") // seu o nome digitado for lucas ou dmd vai retornar true,se não false
 ```
-###  &&-  E lógico
+##  &&-  E lógico
 ```js
 let numero = 10;
 if (numero > 5 && numero < 15) {
   console.log("O número está entre 5 e 15");
 }
 ```
-## Dom(document object Moldel)
-### É uma representação de uma página HTML e de todos os seus conteúdos, Ele se assemelha a uma árvore cujas <br> galhos são no, onde cada tag e conteúdo geram uns nó, tudo em página HTML é um nó na árvore do Dom, de onde podem Surgir ainda outros nós filhos.
+# Dom(document object Moldel)
+## É uma representação de uma página HTML e de todos os seus conteúdos, Ele se assemelha a uma árvore cujas <br> galhos são no, onde cada tag e conteúdo geram uns nó, tudo em página HTML é um nó na árvore do Dom, de onde podem Surgir ainda outros nós filhos.
    <img src="https://hermes.dio.me/articles/cover/315351e5-1c6e-4bad-8690-34a014fc88ec.png" height="460px" weight="120px">
    
 ## Composição do DOM
@@ -236,7 +240,7 @@ document.getElementById("myh1").style.color="red"
 | onresize|Disparado quando há um redirecionamento da janela|
 
 # Condições
-### para Criar Programas dinâmicos e inteligentes,permitem que os programas tomem decisões,usam expressões lógicos,Essas expressões comparam valores,verficam se algo é igual,diferente,Maior ou Menor
+## para Criar Programas dinâmicos e inteligentes,permitem que os programas tomem decisões,usam expressões lógicos,Essas expressões comparam valores,verficam se algo é igual,diferente,Maior ou Menor
 ## Estruturas
 ### -if: Verifica uma única condição
 ### -else: Executa código se a condição do if for falsa
@@ -292,7 +296,7 @@ console.log("Dia comum")
 }
 ```
 # Estretura de Repetição ou Loops
-### São ferramentas essencias que permitem executar um bloco de código repetidamente enquanto uma determinada condição for verdadeira.
+## São ferramentas essencias que permitem executar um bloco de código repetidamente enquanto uma determinada condição for verdadeira.
 ## Tipos de estruturas de repetição
 ### Existem três tipos de estruturas de repetição são elas:
 ### -For: ideal quando você sabe exatamente quantas vezes deseja repitir o código.
@@ -321,7 +325,7 @@ console.log(tr)
 }while(tr <= 5)
 ```
 # Variáveis Simples e Composta
-### são como caixas que armazenam dados a escolha entre variáveis simples e compostas depende da quantidade e do tipo de informação que você precisa guardar.
+## são como caixas que armazenam dados a escolha entre variáveis simples e compostas depende da quantidade e do tipo de informação que você precisa guardar.
 ## Variáveis Simples
 ### - Armazenam um único valor: Cada váriavel simples contém apenas um dado, como um número, uma palavra ou um caractere.
 ### - Tipos de dados: Os Tipos de dados mais comuns são inteiros, números de ponto fluenete,caracteres e booleanos(Verdadeiros ou falsos).
@@ -329,7 +333,7 @@ console.log(tr)
 ### - Armazenam múltiplos valores: A variáveis compostas agrupam vários valores em uma única estrutura, permitindo organizar dados de forma mais eficiente.
 ### - Tipos de dados Compostas: Os tipos mais comuns são listas,tuplas dicionários é conjuntos
 # Array/Vetores
-### È uma coleção ordenada de valores, esses valores podem ser de qualquer tipo de dado, incluindo números String, objetos e até outras arrays, As arrays são nômicas, o que significa que você pode adicionar ou remover elementos a qualquer momento.
+## È uma coleção ordenada de valores, esses valores podem ser de qualquer tipo de dado, incluindo números String, objetos e até outras arrays, As arrays são nômicas, o que significa que você pode adicionar ou remover elementos a qualquer momento.
 ```js
 //Elementos: Valores que ficam agrupadas dentro da array/3 elementos
 const livros ["java","html","css"]
@@ -340,12 +344,14 @@ const livros ["java","html","css"]
 |---|---|
 |  isArray()|Verifica se um determinado é um array, Retorna um valor Boleano(true ou false)| 
 
-## lenght - Retorna o número total de elementos presentes na array
+## lenght
+### - Retorna o número total de elementos presentes na array
 ```js
 const frutas = ["maça","banana","laranja"]
 console.log(frutas.lenght)//Saida 3
 ```
-## isArray() - Verifica se um determinado é um array, Retorna um valor Boleano(true ou false)
+## isArray() 
+### - Verifica se um determinado é um array, Retorna um valor Boleano(true ou false)
  
 ```js
 const mef = [1,2,4]
@@ -375,64 +381,74 @@ let frutas = ["maça","uva"]
 frutas.push("laranja")
 console.log(frutas)// ["maçã","banana","laranja"]
 ```
-## Pop() - È utilizaqdo quando você precisa remover e retornar o último elemento de um array 
+## Pop()
+### - È utilizaqdo quando você precisa remover e retornar o último elemento de um array 
 ```js
 let frutas ["uva","pera","morango"]
 let ut = frutas.pop()
 console.log(frutas)// ["maçã","banana"]
 console.log(ut)// laranja
 ```
-## Shift() - È utilizado para remover e retornar o primeiro elemento de um array
+## Shift()
+### - È utilizado para remover e retornar o primeiro elemento de um array
 ```js
 let lista = ["ovo","pão","leite"]
 let prt = lista.Shift()
 console.log(prt)//ovo
 console.log(lista)//["pão","leite"]
 ```
-## UnShift - Utilizado para adcioanr um elemento na primeira posição da array
+## UnShift 
+### - Utilizado para adcioanr um elemento na primeira posição da array
 ```js
 let nomes = ["lucas","Felipe","Leandro"]
 nomes.Unshift("Vitor")
 console.log(nomes)// ["Vitor","lucas","Felipe","Leandro"]
 ```
-## Spice() - Permite adicionar,remover e substituir elementos em uma array
+## Spice()
+### - Permite adicionar,remover e substituir elementos em uma array
 ```js
 let lista = ["leite","ovos","pão"]
 lista.splice(1,1)//Remove 1 item a partir do 1 indice(item2)
 console.log(lista)//["leite","pão]
 ```
-## Slice() - utilizado para extrair uma parte de um array e criar um novo array com os elementos extraidos,ele não modifica o array
+## Slice()
+### - utilizado para extrair uma parte de um array e criar um novo array com os elementos extraidos,ele não modifica o array
 ```js
 const frutas = ["maçã","banana","laranja","uva","peru"]
 const selct = frutas.slice(1,4)
 console.log(selct)// ["banana","laranja","uva"]
 ```
-## Concat() - Usado para combinar dois ou mais arrays em uma nova array
+## Concat()
+### - Usado para combinar dois ou mais arrays em uma nova array
 ```js
 let at = [1,3,4]
 let th = [6,8,3]
 const junt = at.concat(th)
 console.log(junt)// [1,3,4,6,8,3]
 ```
-## Join() - Permite que você transforme um array em uma string,concatenado todos os eus elementos,você pode até mesmo especificar um separador personalizado para os elemntos
+## Join()
+### - Permite que você transforme um array em uma string,concatenado todos os eus elementos,você pode até mesmo especificar um separador personalizado para os elemntos
 ```js
 const frutas = ["maçã","banana","laranja"]
 const frase = frutas.join(",")
 console.log(frase)//maçã,banana,laranja
 ```
-## indexOf() - Encontra a primeira ocorrênca de um elemento especifico dentro de um array,ela retorna o indice do elemento encontrado,ou -1 caso o elemento não exista
+## indexOf()
+### - Encontra a primeira ocorrênca de um elemento especifico dentro de um array,ela retorna o indice do elemento encontrado,ou -1 caso o elemento não exista
 ```js
 const numeros = [2,4,5,7]
 const posi = numeros.indexof(7)
 console.log(posi)//3
 ```
-## lastindexOf() - Utliza para encontar o último ocorrência de um elmento especifico dentro de um array,retorna o indice dessa ocorrência
+## lastindexOf()
+### - Utliza para encontar o último ocorrência de um elmento especifico dentro de um array,retorna o indice dessa ocorrência
 ```js
 const frutas = ["maçã","pera","banana","laranja","maçã"]
 const ult = frutas.lastIndexOf("maçã")
 console.log(ult)//4
 ```
-## Includes() - Utilizado para verificar se um determinado elemento existe dentro de um array, ele retorna um valor bolleano(true ou false)
+## Includes()
+### - Utilizado para verificar se um determinado elemento existe dentro de um array, ele retorna um valor bolleano(true ou false)
 ```js
 const frutas = ["maçã","banana","laranja"]
 const tbom = frutas.includes("banana")
@@ -440,14 +456,16 @@ console.log(tbom)//true
 const tp = frutas.includes("pera")
 console.log(tp)//false
 ```
-## ForEach - Inteira sobre cada elemento de um array e executa uma função especifica pra cada um deles
+## ForEach 
+### - Inteira sobre cada elemento de um array e executa uma função especifica pra cada um deles
 ```js
 Const frutas = ["maçã","banana","laranja"]
 frutas.ForEach(function(fruta){
 console.log(fruta)
 });
 ```
-## Map() - Permite criar uma nova array a partir de um array existente, ele mapeia cada elemento para um novo valor.
+## Map()
+### - Permite criar uma nova array a partir de um array existente, ele mapeia cada elemento para um novo valor.
 ```js
 const numeros = [1,2,3,4,5]
 const numerosdob = numeros.map(function(numero){
@@ -455,14 +473,15 @@ return numero * 2
 });
 console.log(numerosdob)//[2,4,6,8,10]
 ```
-## filter() - Permite criar novos arrays a partir de um array existente,filtrando os elementos que atendem a um determinado critério.
+## filter() 
+### - Permite criar novos arrays a partir de um array existente,filtrando os elementos que atendem a um determinado critério.
 ```js
 const numeros = [1,2,3,4,5,6]
 const numerosp = numeros.filter(numeros => numero%2===0)
 console.log(numerosp)// [2,4,6]
 ```
 # Function
-### E um bloco de código Reutilizável que executa uma tarefa especifica, E como uma Receita: Você define os ingredientes(Parâmetros) e os passos(corpo da função) para obter um resultado final(valor de retorno). Evita Repetir o mesmo código várias vezes em seu progrma/são códigos que só são executados quando são Chamados.
+## E um bloco de código Reutilizável que executa uma tarefa especifica, E como uma Receita: Você define os ingredientes(Parâmetros) e os passos(corpo da função) para obter um resultado final(valor de retorno). Evita Repetir o mesmo código várias vezes em seu progrma/são códigos que só são executados quando são Chamados.
 ## Funções Vazias(Sem Retorno)
 ### Executam um Bloco de código, Mas não retornam um valor especifico, são utilizados para realizar ações como imprimir no console, Manipular o Dom, ou executar qualquer tarefa que não necessite de um resultado Direto.
 ```js
