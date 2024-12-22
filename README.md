@@ -530,3 +530,25 @@ console.log(estudante["matricula"])//123456
 ```js
 console.log(`meu nome é ${estudante.nome}’)
 ```
+## Método Substring
+```js
+console.log(estudante.matricula.SubString(0,3))//123456
+```
+## Adicionar/Alterar
+## Adicionar
+```js
+estudante.matricula = "1,2,3,4,5,6"
+estudante.fones = ["35487799","98774586"]
+```
+## Alterar
+```js
+estudante.curso = "front-end"
+```
+## Remover
+## Deletar
+```js
+delete estudante.matricula // notação por ponto
+console.log(estudante)
+delete estudante["idade"] // notação de array
+console.log(estudante)
+```
