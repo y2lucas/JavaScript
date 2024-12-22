@@ -368,7 +368,7 @@ console.log(Array.isArray(by))//Resultado:false
 | includes()|Utilizado para verificar se um determinado elemento existe dentro de um array, ele retorna um valor bolleano(true ou false)| 
 | ForEach()|Inteira sobre cada elemento de um array e executa uma função especifica pra cada um deles| 
 | map()| Permite criar uma nova array a partir de um array existente, ele mapeia cada elemento para um novo valor|
-| filte()| | 
+| filter()|Permite criar novos arrays a partir de um array existente,filtrando os elementos que atendem a um determinado critério.| 
 ## Push() - É utilizado para adicionar um ou mais elementos ao final de um array.
 ```js
 let frutas = ["maça","uva"]
