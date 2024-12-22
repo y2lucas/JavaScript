@@ -527,3 +527,6 @@ console.log(estudante.nome)//Tereza
 console.log(estudante["matricula"])//123456
 ```
 ## Usando o Templete String ${}
+```js
+console.log(`meu nome é ${estudante.nome}’)
+```
