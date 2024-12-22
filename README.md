@@ -461,6 +461,32 @@ const numeros = [1,2,3,4,5,6]
 const numerosp = numeros.filter(numeros => numero%2===0)
 console.log(numerosp)// [2,4,6]
 ```
+# Function
+### E um bloco de código Reutilizável que executa uma tarefa especifica, E como uma Receita: Você define os ingredientes(Parâmetros) e os passos(corpo da função) para obter um resultado final(valor de retorno). Evita Repetir o mesmo código várias vezes em seu progrma/são códigos que só são executados quando são Chamados.
+## Funções Vazias(Sem Retorno)
+### Executam um Bloco de código, Mas não retornam um valor especifico, são utilizados para realizar ações como imprimir no console, Manipular o Dom, ou executar qualquer tarefa que não necessite de um resultado Direto.
+```js
+Function Saudacao(){
+console.log("olá, Mundo!")
+}
+Saudacao()// "olá, Mundo!"
+```
+## Funções com Parâmetros
+### Recebem dados de entrada(Parâmetros) para personalizar seu comportamento, usado quando você precisa realizar cálculos, Manipular dados especificar ou criar funções mais flexiveis.
+```js
+Function Soma(a,b){
+return a + b
+}
+let res = Soma(4,7)
+console.log(res)//11
+```
+## Funções com Retorno
+### Executam um Bloco de código e Retornam um valor usado quando Precisa calcular um resultado é usá-lo em outras partes do seu código.
+```js
+Function mult(base,altura){
+return base * altura
+}
+let area = mult(7,2)
+console.log(area)//14
 
-
-
+```
