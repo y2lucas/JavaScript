@@ -507,5 +507,23 @@ return base * altura
 }
 let area = mult(7,2)
 console.log(area)//14
-
 ```
+# Objetos
+## E como uma caixa que armazenam diferentes tipos de dados, como Strings, números, outros objetos, e até mesmo funções, usada para agrupar dados relacionados em um lugar facilitando a compreensão e a manutenção do código, Permite reutilizar o mesmo código em doferentes partes do seu programa.
+```js
+const estudante ={
+nome: "tereza",
+idade: 32,
+matricula: "123456"
+}
+```
+## Para Visualizar
+## Notação Por Ponto
+```js
+console.log(estudante.nome)//Tereza
+```
+## Notação Por Colchetes[]
+```js
+console.log(estudante["matricula"])//123456
+```
+## Usando o Templete String ${}
